@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebremos a Mamá | Emuna Vitale & EntreGuapas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #b3925d;
+            --nude-bg: #f7f3f0; /* Tono nude sutil y sofisticado */
+            --text-dark: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--nude-bg);
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-dark);
+            letter-spacing: 0.05em;
+        }
+
+        .font-thin { font-weight: 100; }
+        .font-light { font-weight: 300; }
+
+        /* Título gigante emocional */
+        .hero-title {
+            letter-spacing: -0.02em;
+            line-height: 1;
+        }
+
+        /* Marcas en tamaño secundario */
+        .brand-title {
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        .booking-container {
+            border: 1px solid rgba(0,0,0,0.05);
+            background: #fff;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+            transition: all 0.4s ease;
+        }
+
+        .whatsapp-btn {
+            background-color: transparent;
+            border: 1px solid var(--text-dark);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: var(--text-dark);
+            color: white;
+        }
+
+        .date-box {
+            border-left: 1px solid var(--accent);
+            padding-left: 1.5rem;
+        }
+
+        iframe {
+            filter: grayscale(0.1);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header: Jerarquía Invertida -->
+    <header class="pt-24 pb-16 px-6 max-w-6xl mx-auto text-center">
+        <p class="font-light text-[9px] tracking-[0.5em] text-gray-400 mb-12 uppercase">Enjoy Santiago presenta</p>
+        
+        <!-- Título Emocional Protagonista -->
+        <h1 class="hero-title text-5xl md:text-8xl font-thin mb-10 text-gray-900">
+            Celebremos juntos a mamá
+        </h1>
+
+        <!-- Marcas como subtítulo elegante -->
+        <h2 class="brand-title text-sm md:text-lg font-light mb-2">
+            Emuna Vitale <span class="font-normal opacity-30 text-gray-400 mx-2">|</span> EntreGuapas
+        </h2>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <!-- Columna de Información -->
+            <div class="lg:col-span-4 flex flex-col justify-start pt-6">
+                <div class="mb-12">
+                    <h3 class="font-normal text-[10px] tracking-widest uppercase mb-6 text-gray-400">Cuándo</h3>
+                    <div class="date-box mb-6">
+                        <p class="text-3xl font-light leading-tight">Sábado 09 Mayo</p>
+                        <p class="text-3xl font-light leading-tight">Domingo 10 Mayo</p>
+                        <p class="text-xs font-light text-[#b3925d] mt-3 italic uppercase tracking-wider">Desde las 14:00 hrs</p>
+                    </div>
+                </div>
+
+                <div class="mb-12">
+                    <h3 class="font-normal text-[10px] tracking-widest uppercase mb-4 text-gray-400">Dónde</h3>
+                    <p class="text-xl font-light leading-relaxed">
+                        Hotel Enjoy Santiago<br>
+                        <span class="text-gray-400 text-sm italic">Experiencia de bienestar privada</span>
+                    </p>
+                </div>
+
+                <div class="pt-6">
+                    <a href="https://wa.me/56968471032" target="_blank" class="whatsapp-btn inline-block px-10 py-5 text-[10px] tracking-[0.3em] uppercase font-light">
+                        Contacto WhatsApp
+                    </a>
+                    <p class="text-[10px] text-gray-400 mt-6 font-light tracking-widest">+56 9 6847 1032</p>
+                </div>
+            </div>
+
+            <!-- Columna de la Agenda -->
+            <div class="lg:col-span-8">
+                <div class="booking-container p-2 md:p-6 shadow-sm">
+                    <iframe 
+                        src="https://agendamiento.reservo.cl/makereserva/agenda/Y0xl8Ep0p0XPMv8R4n62xzy8x6A4a2" 
+                        width="100%" 
+                        height="700" 
+                        frameborder="0">
+                    </iframe>
+                </div>
+                <p class="text-[9px] text-gray-400 mt-4 tracking-widest uppercase text-center md:text-right">Plataforma de reserva segura via Reservo.cl</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-20 text-center">
+        <div class="w-12 h-[1px] bg-gray-200 mx-auto mb-8"></div>
+        <p class="font-thin text-[10px] tracking-[0.4em] text-gray-400 uppercase">
+            Estética · Bienestar · Exclusividad _ 2026
+        </p>
+    </footer>
+
+</body>
+</html>
